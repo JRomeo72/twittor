@@ -28,6 +28,13 @@
   font-display: swap;
   src: url(../fonts/Lato-Regular.woff2) format('woff2');
 }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: 'Quicksand';
+}
   
   html, body {
     margin: 0px !important;
@@ -35,6 +42,11 @@
     font-size: 16px;
     background-color: #dde1e2; 
     width: 100%;
+
+    overscroll-behavior-y: contain;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
 }
 
 /* Personalizados */
