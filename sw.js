@@ -5,7 +5,7 @@ const DYNAMIC_CACHE = 'dynamic-v1';
 const INMUTABLE_CACHE = 'inmutable-v1';
 
 const MODE = 'production'
-const APP_SHELL = [];
+let APP_SHELL = [];
 
 if(MODE != 'production') {
     APP_SHELL = [
