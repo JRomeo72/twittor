@@ -1,4 +1,4 @@
-export let url = window.location.href;
+let url = window.location.href;
 let swUrl = '/twittor/sw.js'; // Si esta en Github
 
 if(navigator.serviceWorker) {
