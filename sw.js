@@ -23,9 +23,9 @@ const APP_SHELL = [
 //     .then(res => res.text()).then(console.log)
 
 const APP_SHELL_INMUTABLE = [
-    'https://fonts.googleapis.com/css?family=Quicksand:300,400',
-    'https://fonts.googleapis.com/css?family=Lato:400,300',
-    'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
+    // 'https://fonts.googleapis.com/css?family=Quicksand:300,400',
+    // 'https://fonts.googleapis.com/css?family=Lato:400,300',
+    // 'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
     'css/animate.css',
     'js/libs/jquery.js'
 ];
@@ -65,7 +65,6 @@ self.addEventListener('fetch', e => {
             return res
         } else {
             return fetch( e.request ).then( newRes => {
-                console.log("URL:", newRes)
                 return updateDynamicCache( DYNAMIC_CACHE, e.request, newRes )
             } )
         }
